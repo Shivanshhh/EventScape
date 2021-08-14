@@ -34,7 +34,7 @@ router.post('/login', async (req, res) => {
         res.send( 'wrong-password' );
       }
     } else {
-      res.send('invalid-email');
+      res.redirect('/addevent');
     }
   });
 
