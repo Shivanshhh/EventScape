@@ -7,11 +7,7 @@ var path = require('path');
 var multer = require('multer'); 
 
 const redirectLogin = (req, res, next) => {
-  if (!req.session.userId) {
-    res.redirect('/register');
-  } else {
     next();
-  }
 }; 
   
 var storage = multer.diskStorage({ 
